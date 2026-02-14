@@ -4,7 +4,7 @@ const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: 'https://schoolapp.classof25.online' })); // Your CloudFront/custom domain
+app.use(cors({ origin: 'https://frontend.teachdev.online' })); // Your CloudFront/custom domain
 
 // Add a health check endpoint
 app.get('/health', (req, res) => {
